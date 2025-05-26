@@ -37,7 +37,7 @@ class ConfigProvider
 				        'name' => 'httpRpcDebug',
 				        'type' => 1,
 				        'host' => '0.0.0.0',
-				        'port' => intval(env('RPC_DEBUG_PORT', 9303)),
+				        'port' => intval(env('RPC_DEBUG_PORT', 9091)),
 				        'sock_type' => 1,
 				        'callbacks' => [
 					        Event::ON_REQUEST => ['HttpRpcDebug', 'onRequest'],

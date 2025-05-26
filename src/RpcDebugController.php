@@ -25,10 +25,10 @@ class RpcDebugController
      *
      * @return ResponseInterface.
      */
-    function test()
+    function debug()
     {
         $this->classmap = [];
-        $defaultPort = env('HTTP_PORT', 8075);
+        $defaultPort = env('HTTP_PORT', 8081);
         $server = $this->request->input('server', '127.0.0.1');
         $port = $this->request->input('port', $defaultPort);
         $par = trim($this->request->input('fucontionname', "[\n\n]"));
