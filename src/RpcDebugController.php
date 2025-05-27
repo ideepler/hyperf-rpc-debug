@@ -98,9 +98,9 @@ $(document).ready(function(){
 </div>
 <div style="float:right; width:800px;" >结果:<textarea style="display:block;min-height:80%;min-width:80%" class="res"></textarea></div>
 </body>
-</html> 
+</html>
 html;
-        return $this->response->write($html);
+        return $this->response->html($html);
     }
 
 
